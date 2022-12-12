@@ -29,7 +29,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>chorder</title>
+  <link rel="stylesheet" href="./loading.css">
+
+  <title>Chorder</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
@@ -40,8 +42,13 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <div id="loading_icon" class="loading">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+
   <script>
     window.addEventListener('load', function(ev) {
+      var loading = document.querySelector('#loading_icon');
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
@@ -51,6 +58,8 @@
         return engineInitializer.initializeEngine();
       }).then(function(appRunner) {
         return appRunner.runApp();
+      }).then(function(app) {
+        loading.remove();
       });
     });
   </script>
