@@ -70,6 +70,7 @@ extension SelectedColorExtension on Note {
       '8': this,
       '9b': noteAbove(1),
       '9': noteAbove(2),
+      '11': noteAbove(5),
       '13': noteAbove(9),
     };
   }
