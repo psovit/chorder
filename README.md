@@ -1,10 +1,10 @@
 # chorder
 
-This project is an attempt to build guitar tuner + chord finder for the web using flutter.
+Chorder provides a way to find chords that have a specific set of notes.
+It is a reverse chord finder tool.
 
-## Getting Started
 
-
+Demo: `https://chorder.psovit.com`
 
 
 ## Useful Links
