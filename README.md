@@ -12,3 +12,7 @@ This project is an attempt to build guitar tuner + chord finder for the web usin
 - library to look up notes from pitch: `https://pub.dev/packages/pitchupdart`
 - Chord Construction `https://www.michael-thomas.com/music/class/chord_construction.htm`
 - Chord Notes `https://www.michael-thomas.com/music/class/chords_notesinchords.htm`
+
+
+## Build Web
+`flutter build web --release --web-renderer canvaskit`
